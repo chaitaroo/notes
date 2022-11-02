@@ -1,0 +1,174 @@
+body{
+    overflow-x: hidden;
+}
+
+.title{
+    display: flex;
+    width:1fr;
+    height: 60px;
+    border-right:none;
+    cursor: pointer;
+    align-items: center;
+    padding-left: 30px;
+    font-size: 17px;
+    font-weight:500;
+    position: relative;
+}
+.selected-note {
+    background-color:  rgb(66, 30, 102);
+    color:white;
+}
+
+
+.App{
+    display:grid;
+    grid-template-columns:1fr 3fr;
+
+}
+
+
+.nav>div>{
+    height:50px;
+    width: 50px;
+    cursor: pointer;
+    z-index: 1111111;
+    
+ 
+}
+
+.tool-container{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    border-radius:3px;
+    
+
+}
+.tool{
+    height:100%;
+    width: 100%;
+    cursor: pointer;
+    position:relative; 
+    z-index: 111111;
+    
+    
+    
+}
+
+ .tools{
+    position: absolute;
+    height: 20px;
+    width: 20px;
+
+   
+} 
+
+.nav{
+    display: grid;
+    grid-template-columns: repeat(6,60px);
+    grid-template-rows: 50% 50%;
+    height:100px;
+    background-color: rgb(241, 240, 240);
+    border-radius: 4px;
+}
+
+
+
+.list-header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title_header{
+    padding: 8px;
+    padding-left: 17px;
+    margin-left: 10px;
+
+}
+textarea{
+    border: none;
+    padding: 10px;
+}
+.sideBar{
+    height: 100%;
+    border-right:0.1px solid rgba(182, 181, 181, 0.445);
+}
+.addNote{
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(66, 30, 102);
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    color:white;
+    cursor: pointer;
+
+}
+
+.selected{
+    background-color: rgb(66, 30, 102);
+    color:white
+}
+
+.tool-selected{
+    background-color: rgb(209, 206, 206);
+}
+/* 
+.note:hover::after{
+content:url('./delete.png');
+position: absolute;
+left: 85%;
+z-index: 111111111111111111111111111111111111111;
+opacity: 1;
+
+   
+}
+
+
+
+.note::after{
+    content:url('./delete.png');
+    position: absolute;
+    left: 85%;
+    z-index: 111111111111111111111111111111111111111;
+    opacity: 0;
+
+}
+ */
+
+ .delete_icon{
+   position: absolute;
+   left:85%;
+   opacity: 0;
+ }
+
+ .delete_icon:hover{
+    opacity: 1;
+ }
+
+ .no_notes{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+ 
+ }
+
+ .debut_create_note{
+    width: 120px;
+    height: 80px;
+    cursor: pointer;
+    color: white;
+    background-color:rgb(66, 30, 102);
+    border: none;
+    font-size:22px;
+    border-radius: 6px;
+ }
+
+
